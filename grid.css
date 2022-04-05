@@ -1,0 +1,81 @@
+.main-layout{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+.header{
+    background:red;
+    grid-column: h;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.header img{
+    width:100px;
+    height:80px;
+    border-radius:25px;
+    float: left;
+    display: none;     /*image ta show hbena*/
+}
+.paidheader{
+    grid-column: h;
+    background: aqua;
+    text-align: center;
+    color:red;
+    font-size: 20px;
+}
+.paidheader img{
+    width:100px;
+    height: 100px;
+    float:left;
+}
+
+.menu{
+    grid-column: m;
+    background:yellow;
+}
+
+.content{
+    grid-column: c;
+    background:pink;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.najifa{
+    width:200px;
+    height:auto;
+    margin:10px;
+    padding:10px;
+
+}
+.najifa img{
+    width:200px;
+    height:100px;
+    
+}
+.customnajifa{
+
+    width:200px;
+    height:auto;
+    margin:10px;
+    padding:10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background:grey;
+}
+.customnajifa img{
+    width:200px;
+    height:100px;
+    border-radius: 50px;
+}
+
+.footer{
+    grid-column: f;
+    background:grey;
+}
